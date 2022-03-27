@@ -5,6 +5,8 @@
 ### 🛠 Stacks
 - Spring 5.2.19
 - Java 11
+- Tomcat 9.0
+- MariaDB 10.7.3
 
 
 ### ⌨️ Work
