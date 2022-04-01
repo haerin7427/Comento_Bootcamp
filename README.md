@@ -26,8 +26,9 @@
 </div>
 </details>
 
+
 <details>
-<summary>week1</summary>
+<summary>week2</summary>
 <div markdown="1">
 [API Giude Document](https://github.com/haerin7427/ComentoCamp/blob/main/report/week2_APIguide.pdf)
 </div>
