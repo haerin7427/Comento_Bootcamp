@@ -25,6 +25,20 @@ public class settingTest {
         return service.yearloginNum(year);
     }
     
+    @ResponseBody 
+    @RequestMapping("/monthLogin")
+    public Map<String, Object> monthLogin(String yearMonth) throws Exception{ 
+        
+        return service.yearMonthloginNum(yearMonth);
+    }
+    
+    @ResponseBody 
+    @RequestMapping("/dayLogin")
+    public Map<String, Object> dayLogin(String yearMonthDay) throws Exception{ 
+        
+        return service.yearMonthDayloginNum(yearMonthDay);
+    }
+    
     @RequestMapping("/test") 
     public ModelAndView test() throws Exception{ 
         ModelAndView mav = new ModelAndView("test"); 
@@ -38,5 +52,7 @@ public class settingTest {
         mav.addObject("list", resultList); 
         return mav; 
     }
+    
+    
  
 }

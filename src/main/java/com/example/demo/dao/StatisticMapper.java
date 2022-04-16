@@ -6,5 +6,9 @@ import java.util.HashMap;
  
 public interface  StatisticMapper {
     public HashMap<String, Object> selectYearLogin(String year);
+    
+    public HashMap<String, Object> selectYearMonthLogin(String yearMonth);
+    
+    public HashMap<String, Object> selectYearMonthDayLogin(String yearMonth);
  
 }

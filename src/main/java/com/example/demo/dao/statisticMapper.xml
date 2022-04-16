@@ -11,4 +11,29 @@
         where left(ri.createDate, 2) = #{year};
     </select>
     
+    <select id="selectYearMonthLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 4) = #{yearMonth};
+    </select>
+    
+    <select id="selectYearMonthDayLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 6) = #{yearMonthDay};
+    </select>
+    
+    <select id="selectMonthlyLogin" parameterType="com.example.demo.dto.MonthlyLoginDTO" resultType="hashMap">
+        select (count(*)/#{days}) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 4) = #{yearMonth};
+    </select>
+   
+    
+    <select id="selectOrganizationLogin" parameterType="com.example.demo.dto.organizationLoginDTO" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 4) = #{yearMonth} AND ri.requestCode = #{organization};
+    </select>
+    
 </mapper>
