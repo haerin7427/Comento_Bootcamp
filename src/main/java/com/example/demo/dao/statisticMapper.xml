@@ -28,6 +28,13 @@
         from statistc.requestinfo ri
         where left(ri.createDate, 4) = #{yearMonth};
     </select>
+    
+    <select id="selectExceptHolidaysLogin" parameterType="string" resultType="hashMap">
+        SELECT count(*) as totCnt
+        FROM statistc.requestInfo A LEFT JOIN statistc.holidays B 
+        ON left(A.createDate, 6) = B.days 
+        where B.days IS NULL and left(A.createDate, 4) = #{yearMonth};
+    </select>
    
     
     <select id="selectOrganizationLogin" parameterType="com.example.demo.dto.organizationLoginDTO" resultType="hashMap">
@@ -35,5 +42,7 @@
         from statistc.requestinfo ri
         where left(ri.createDate, 4) = #{yearMonth} AND ri.requestCode = #{organization};
     </select>
+    
+    
     
 </mapper>

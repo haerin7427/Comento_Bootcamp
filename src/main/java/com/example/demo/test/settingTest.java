@@ -21,22 +21,37 @@ public class settingTest {
     @ResponseBody 
     @RequestMapping("/sqlyearStatistic")
     public Map<String, Object> sqltest(String year) throws Exception{ 
-        
         return service.yearloginNum(year);
     }
     
     @ResponseBody 
     @RequestMapping("/monthLogin")
     public Map<String, Object> monthLogin(String yearMonth) throws Exception{ 
-        
         return service.yearMonthloginNum(yearMonth);
     }
     
     @ResponseBody 
     @RequestMapping("/dayLogin")
-    public Map<String, Object> dayLogin(String yearMonthDay) throws Exception{ 
-        
+    public Map<String, Object> dayLogin(String yearMonthDay) throws Exception{
         return service.yearMonthDayloginNum(yearMonthDay);
+    }
+    
+    @ResponseBody 
+    @RequestMapping("/averageLogin")
+    public Map<String, Object> averageLogin(String year, String month) throws Exception{
+        return service.averageloginNum(year, month);
+    }
+    
+    @ResponseBody 
+    @RequestMapping("/weekLogin")
+    public Map<String, Object> weekLogin(String yearMonth) throws Exception{
+        return service.weekloginNum(yearMonth);
+    }
+    
+    @ResponseBody 
+    @RequestMapping("/orgaLogin")
+    public Map<String, Object> organizationLogin(String organization, String yearMonth) throws Exception{
+        return service.organizationloginNum(organization, yearMonth);
     }
     
     @RequestMapping("/test") 
