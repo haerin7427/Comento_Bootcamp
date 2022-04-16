@@ -21,3 +21,28 @@
 
 </div>
 </details>
+
+<details>
+<summary>week4</summary>
+<div markdown="1">
+  
+  [API Giude Document](https://github.com/haerin7427/ComentoCamp_boot/blob/master/APIguide/week4_APIguide.pdf)
+  <br></br>
+  <p>1. 월별 접속자 수 확인 API</p>
+  <img width="461" alt="No1_API" src="https://user-images.githubusercontent.com/43716537/163684618-d10687e0-fcf1-4b4a-ac85-f6535bcf6c2c.png">
+  <br></br>
+  <p>2. 일별 접속자 수 확인 API</p>
+  <img width="492" alt="No2_API" src="https://user-images.githubusercontent.com/43716537/163684680-930d2def-1c92-4635-aaa6-b6832a99b930.png">
+  <br></br>
+  <p>3. 월별 평균 하루 접속자 수 확인 API</p>
+  <img width="503" alt="No3_API" src="https://user-images.githubusercontent.com/43716537/163684686-efb47d7f-fb3e-4d63-8526-21ccd55b35ec.png">
+  <br></br>
+  <p>4. 월별 휴일을 제외한 접속자 수 확인 API</p>
+  <img width="483" alt="No4_API" src="https://user-images.githubusercontent.com/43716537/163684691-8d284b64-0c7b-408d-af7b-9ab69e8a85b6.png">
+  <br></br>
+  <p>5. 월별 부서별 접속자 수 확인 API</p>
+  <img width="573" alt="No5_API" src="https://user-images.githubusercontent.com/43716537/163684698-5ea734c2-082b-4e09-b9a0-025e6e4ea3cd.png">
+
+
+</div>
+</details>
