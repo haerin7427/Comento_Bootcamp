@@ -17,6 +17,13 @@
         where left(ri.createDate, 4) = #{yearMonth};
     </select>
     
+    <select id="selectLoginNumInPeriod" resultType="Date">
+    	<!-- select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 4) = #{startDate}; -->
+        SELECT login_date FROM statistc.loginInfo WHERE DATE(login_date) BETWEEN #{startDate} AND #{endDate};
+    </select>
+    
     <select id="selectYearMonthDayLogin" parameterType="string" resultType="hashMap">
         select count(*) as totCnt
         from statistc.requestinfo ri
@@ -42,6 +49,8 @@
         from statistc.requestinfo ri
         where left(ri.createDate, 4) = #{yearMonth} AND ri.requestCode = #{organization};
     </select>
+    
+    
     
     
     

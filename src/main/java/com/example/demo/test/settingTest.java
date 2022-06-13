@@ -41,6 +41,12 @@ public class settingTest {
     }
     
     @ResponseBody 
+    @RequestMapping("/logins_except_holiday") 
+    public Map<String, Object> users_except_holiday(String startDate, String endDate) throws Exception{ 
+    	return service.get_num_users_except_holiday(startDate, endDate);
+    }
+    
+    @ResponseBody 
     @RequestMapping("/dayLogin")
     public Map<String, Object> dayLogin(String yearMonthDay) throws Exception{
         return service.yearMonthDayloginNum(yearMonthDay);
