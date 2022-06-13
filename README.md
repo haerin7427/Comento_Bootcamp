@@ -46,3 +46,23 @@
 
 </div>
 </details>
+
+<details>
+<summary>etc</summary>
+<div markdown="1">
+  
+  1. [Open API 사용](https://study-ce.tistory.com/95)
+  2. [JSON 파싱](https://study-ce.tistory.com/96)
+  3. [API Giude Document](https://github.com/haerin7427/ComentoCamp_boot/blob/master/APIguide/0613_APIguide.pdf)
+  4. 수정 결과 이미지
+  <br></br>
+  
+  <p>주어진 기간 동안 공휴일을 제외한 접속자 수 확인 API</p>
+  <img width="700" alt="스크린샷 2022-06-13 오후 11 05 09" src="https://user-images.githubusercontent.com/43716537/173376839-e7e61aee-2798-49ad-a7e9-0ff7c11a66e8.png">
+
+  
+
+  
+</div>
+</details>
+
